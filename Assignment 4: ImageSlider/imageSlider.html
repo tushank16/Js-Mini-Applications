@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Slider</title>
+  <style>
+    img{
+      width: 1000px;
+      height: 500px;
+    }
+    #slider{
+      width: 1000px;
+      height: 500px;
+      margin: 20px auto;
+      position: relative;
+      border: 10px solid rgb(124, 117, 50);
+      box-shadow: 0px 0px 3px 2px #ccc;    
+    }
+    button{
+      padding: 20px;
+      border: none;
+      background:rgba(20, 20, 141, 0.863);
+      font-size: 30px;
+      color: burlywood;
+      position: absolute;
+      top: 60%;
+    }
+    .next{
+      border-radius: 10px 00px 00px 10px;
+      margin-left: 950px;
+    }
+    .prev{
+      border-radius: 00px 10px 10px 00px;
+      margin-right: 950px;
+    }
+  </style>
+</head>
+<body>
+  <div id="slider">
+    <div id="box">
+      <img src="a.jpg">
+    </div>
+    
+    <!--Buttons For the controls slider-->
+    <button class="prev" onclick="prevImage()"><</button>
+    <button class="next" onclick="nextImage()">></button>
+  </div>
+  <script src="imageSlider.js"></script>
+</body>
+</html>
